@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="engine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug x64">
+				<Option output="bin/Debug/engine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option deps_output="../Debug/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-DFREEGLUT_STATIC" />
+					<Add option="-DFREEIMAGE_LIB" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DENGINE_EXPORTS" />
+					<Add option="-D_USRDLL" />
+					<Add directory="../dependencies/freeimage/include/" />
+					<Add directory="../dependencies/" />
+					<Add directory="../dependencies/freeglut/include/" />
+				</Compiler>
+				<Linker>
+					<Add directory="../dependencies/freeimage/lib/x64/Debug/" />
+					<Add directory="../dependencies/freeglut/lib/x64/Debug/" />
+				</Linker>
+			</Target>
+			<Target title="Release x64">
+				<Option output="bin/Release/engine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option deps_output="../Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-DFREEGLUT_STATIC" />
+					<Add option="-DFREEIMAGE_LIB" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DENGINE_EXPORTS" />
+					<Add option="-D_USRDLL" />
+					<Add directory="../dependencies/freeimage/include/" />
+					<Add directory="../dependencies/" />
+					<Add directory="../dependencies/freeglut/include/" />
+				</Compiler>
+				<Linker>
+					<Add directory="../dependencies/freeimage/lib/x64/Release/" />
+					<Add directory="../dependencies/freeglut/lib/x64/Release/" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="../dependencies" />
+			<Add directory="../dependencies/freeimage/include" />
+		</Compiler>
+		<Linker>
+			<Add library="glut" />
+			<Add library="GL" />
+			<Add library="freeimage" />
+			<Add library="GLU" />
+		</Linker>
+		<Unit filename="Camera.cpp" />
+		<Unit filename="Camera.h" />
+		<Unit filename="Engine.cpp" />
+		<Unit filename="Engine.h" />
+		<Unit filename="InfiniteLight.cpp" />
+		<Unit filename="InfiniteLight.h" />
+		<Unit filename="Light.cpp" />
+		<Unit filename="Light.h" />
+		<Unit filename="List.cpp" />
+		<Unit filename="List.h" />
+		<Unit filename="Material.cpp" />
+		<Unit filename="Material.h" />
+		<Unit filename="Mesh.cpp" />
+		<Unit filename="Mesh.h" />
+		<Unit filename="Node.cpp" />
+		<Unit filename="Node.h" />
+		<Unit filename="Object.cpp" />
+		<Unit filename="Object.h" />
+		<Unit filename="OmniLight.cpp" />
+		<Unit filename="OmniLight.h" />
+		<Unit filename="OrthoCam.cpp" />
+		<Unit filename="OrthoCam.h" />
+		<Unit filename="PerspectiveCam.cpp" />
+		<Unit filename="PerspectiveCam.h" />
+		<Unit filename="SpotLight.cpp" />
+		<Unit filename="SpotLight.h" />
+		<Unit filename="Texture.cpp" />
+		<Unit filename="Texture.h" />
+		<Unit filename="Type.cpp" />
+		<Unit filename="Type.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
