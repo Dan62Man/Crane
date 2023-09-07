@@ -68,8 +68,8 @@
 		</Linker>
 		<Unit filename="Camera.cpp" />
 		<Unit filename="Camera.h" />
-		<Unit filename="Engine.cpp" />
-		<Unit filename="Engine.h" />
+		<Unit filename="engine.cpp" />
+		<Unit filename="engine.h" />
 		<Unit filename="DirectionalLight.cpp" />
 		<Unit filename="DirectionalLight.h" />
 		<Unit filename="Light.cpp" />
