@@ -70,8 +70,8 @@
 		<Unit filename="Camera.h" />
 		<Unit filename="Engine.cpp" />
 		<Unit filename="Engine.h" />
-		<Unit filename="InfiniteLight.cpp" />
-		<Unit filename="InfiniteLight.h" />
+		<Unit filename="DirectionalLight.cpp" />
+		<Unit filename="DirectionalLight.h" />
 		<Unit filename="Light.cpp" />
 		<Unit filename="Light.h" />
 		<Unit filename="List.cpp" />
@@ -86,15 +86,14 @@
 		<Unit filename="Object.h" />
 		<Unit filename="OmniLight.cpp" />
 		<Unit filename="OmniLight.h" />
-		<Unit filename="OrthoCam.cpp" />
-		<Unit filename="OrthoCam.h" />
-		<Unit filename="PerspectiveCam.cpp" />
-		<Unit filename="PerspectiveCam.h" />
+		<Unit filename="OrthographicCamera.cpp" />
+		<Unit filename="OrthographicCamera.h" />
+		<Unit filename="PerspectiveCamera.cpp" />
+		<Unit filename="PerspectiveCamera.h" />
 		<Unit filename="SpotLight.cpp" />
 		<Unit filename="SpotLight.h" />
 		<Unit filename="Texture.cpp" />
 		<Unit filename="Texture.h" />
-		<Unit filename="Type.cpp" />
 		<Unit filename="Type.h" />
 		<Extensions />
 	</Project>
