@@ -23,7 +23,7 @@
 					<Add option="-DENGINE_EXPORTS" />
 					<Add option="-D_USRDLL" />
 					<Add directory="../dependencies/freeimage/include/" />
-					<Add directory="../dependencies/" />
+					<Add directory="../dependencies/glm/include" />
 					<Add directory="../dependencies/freeglut/include/" />
 				</Compiler>
 				<Linker>
@@ -57,7 +57,8 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add directory="../dependencies" />
+			<Add option="-fPIC" />
+			<Add directory="../dependencies/glm/include" />
 			<Add directory="../dependencies/freeimage/include" />
 		</Compiler>
 		<Linker>
